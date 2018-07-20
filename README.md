@@ -4,21 +4,11 @@
 
 2.Nio file operations with streams, multi file merging and flatMapping to single streams and more.!
 
-3. In package com.plural.rank.student it has an interesting application of spliterator
-USE CASE IS AS FOLLOWS.
+3.In package com.plural.rank.student it has an interesting application of spliterator USE CASE IS AS FOLLOWS.
 
-2 files First one containing set of 4 lines
-id number
-first name
-last name
-dept
-file name:rankstudent_student_data
+Two files First one containing set of 4 lines id number,first name,last name and dept.
+FILE NAME:rankstudent_student_data
 
-2nd file containing 2 lines
-id number
-rank
-file name:rankstudent_student_ranks
+2nd file containing 2 lines id number,rank,FILE NAME:rankstudent_student_ranks
 
-read both files using spliterator 
-add sort based on rank
-display list based on rank in ascending order.
+OBJECTIVE: Read both files using custom spliterator and sort based on rank. display list based on rank in ascending order.
