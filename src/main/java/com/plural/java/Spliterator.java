@@ -18,6 +18,7 @@ public class Spliterator {
 		
 		try(Stream<String>lines=Files.lines(path))
 		{
+			
 			java.util.Spliterator<String> linesSpliterator= lines.spliterator();
 			java.util.Spliterator<Person> peopleSpliterator=new PersonSpliterator(linesSpliterator);
 			Stream<Person>people=StreamSupport.stream(peopleSpliterator, false);

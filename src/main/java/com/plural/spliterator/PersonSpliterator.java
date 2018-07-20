@@ -17,9 +17,24 @@ public class PersonSpliterator implements Spliterator<Person> {
 		this.lineSpliterator = lineSpliterator;
 	}
 	
+	//
 	@Override
 	public int characteristics() {
+//		A stream has a state these are the bits that defines the states
+//		Spliterator.CONCURRENT
+//		Spliterator.ORDERED
+//		Spliterator.DISTINCT
+//		Spliterator.SORTED
+//		Spliterator.SIZED ...etc
+		
+//		for arraylist 
+//		return Spliterator.ORDERED|Spliterator.SIZED|Spliterator.SUBSIZED
+		
+//		for hashset, distinct and other properties to define its charecteristics
+		
  		return lineSpliterator.characteristics();
+ 		
+ 		
 	}
 
 	@Override

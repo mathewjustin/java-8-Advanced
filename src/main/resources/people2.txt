@@ -1,0 +1,12 @@
+Alice
+52
+New york
+Brian
+23
+Delhi
+Tom
+45
+India
+Diya
+33
+Nepal
