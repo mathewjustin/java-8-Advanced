@@ -17,10 +17,16 @@ import java.util.stream.Stream;
 //3
 //4
 //file 2 content
-//3
-//2
 //1
+//2
 //3
+//4
+
+//outputfile
+//2
+//4
+//6
+//8
 
 //read from these files and add them then write output to a file
 
@@ -44,16 +50,7 @@ public class WordsAndStreams2 {
 		{
 			
 		}
-		
-	
-		List<Integer> voterA = Arrays.asList(1, 2, 3, 4, 5,8);
-		List<Integer> voterB = Arrays.asList(1, 2, 3, 4, 5);
-
-		List<Integer> voterC= IntStream.range(0,voterA.size()).
-				mapToObj(i->voterA.get(i)+voterB.get(i)).
-				collect(Collectors.toList());
-	    
-		voterC.forEach(System.out::println);
+		 
 	
 	}
 	
