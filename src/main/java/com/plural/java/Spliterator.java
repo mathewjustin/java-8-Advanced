@@ -3,6 +3,8 @@ package com.plural.java;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.List;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
@@ -22,7 +24,9 @@ public class Spliterator {
 			java.util.Spliterator<String> linesSpliterator= lines.spliterator();
 			java.util.Spliterator<Person> peopleSpliterator=new PersonSpliterator(linesSpliterator);
 			Stream<Person>people=StreamSupport.stream(peopleSpliterator, false);
-			people.forEach(System.out::println);
+//			people.forEach(System.out::println);
+			List<Person> pr=people.collect(Collectors.toList());
+			pr.forEach(System.out::println);
 			
 		}catch (Exception e) {
 		e.printStackTrace();
